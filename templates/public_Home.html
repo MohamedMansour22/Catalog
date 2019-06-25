@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/15.css">
+
+</head>
+<body>
+
+<nav>
+ <div class="nav-grid-container">
+       <div class="grid-item">
+    <h1>Recipe Catalog</h1></div>
+             <div class="nav-grid-item">
+      <button class="login-button" type="button" class="btn btn-primary btn-lg">
+<a href='{{url_for('showLogin')}}'>Login</a>
+            </button>
+                  </div>
+        </div>
+</nav>
+
+<div class="grid-container">
+   <div class="grid-item">
+<h2>Select category</h2>
+
+{% for i in categories %}
+<div>
+  <p> <a href='{{url_for('categories',category_id = i.id )}}'>{{i.name}}</a></p>
+</div>
+{% endfor %}
+</div>
+   <div class="grid-item">
+<h2>Latest recipes</h2>
+
+{% for i in recipes %}
+<div>
+    <p><a href='{{url_for('showRecipe', category_id = i.id, recipe_id = i.id )}}'>{{i.name}}</a></p>
+</div>
+{% endfor %}
+</div>
+    </div>
+</body>
+</html>

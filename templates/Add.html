@@ -1,0 +1,23 @@
+<html>
+<link rel="stylesheet" href="/static/15.css">
+<body>
+<h1>ADD PAGE</h1>
+
+<form action="{{url_for('Add',category_id=category_id, user_id=user_id)}}" method='POST'>
+<h3>Game Name:</h3>
+<input class="name" type='text' name='name'>
+<h4>Game Description:</h4>
+<textarea class="description" name='description'></textarea>
+<h4>Game Category:</h4>
+    <select name="categories_id">
+        <option value=1>Action</option>
+        <option value=2>Sport</option>
+        <option value=3>Strategy</option>
+        <option value=4>Puzzel</option>
+        <option value=5>Adventure</option>
+    </select>
+<button type="submit" value="Create">ADD</button>
+</form>
+<button class="delete-button" type="button"><a href='{{url_for('categories',category_id = category_id)}}'>Cancel</a></button>
+</body>
+</html>

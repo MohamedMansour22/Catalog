@@ -1,0 +1,17 @@
+<html>
+<link rel="stylesheet" href="/static/15.css">
+</head>
+<body>
+
+<h1 style="color:blue;">Games Catalog</h1>
+
+<h2>Select a category</h2>
+
+{% for i in categories %}
+<div>
+  <p> <a href='{{url_for('categories',category_id = i.id )}}'>{{i.name}}</a></p>
+</div>
+{% endfor %}
+
+</body>
+</html>

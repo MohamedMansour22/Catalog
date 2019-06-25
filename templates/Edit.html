@@ -1,0 +1,14 @@
+<html>
+<link rel="stylesheet" href="/static/15.css">
+<body>
+<h1>EDIT PAGE</h1>
+<form action="{{url_for('edit',category_id=category_id, game_id=item.id, item=edit)}}" method='POST'>
+<h3>Game Name:</h3>
+    <input class="name" type='text' size='50' name='name'">
+<h4>Game Description:</h4>
+<textarea class="description" name="Text1" placeholder="{{item.description}}"></textarea>
+<button type="submit" value="Edit">Update</button>
+</form>
+<button type="button"><a href='{{url_for('categories',category_id = category_id)}}'>Cancel</a></button>
+</body>
+</html>

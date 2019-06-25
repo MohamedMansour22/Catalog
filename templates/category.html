@@ -1,0 +1,21 @@
+<html>
+<link rel="stylesheet" href="/static/15.css">
+<body>
+<div class="category page">
+<h1>Category Page</h1>
+<h3>Game Categories:</h3>
+{% for i in game %}
+<div>
+    <p><a href='{{url_for('Display',category_id = i.id,game_id = i.id )}}'>{{i.name}}</a></p>
+</div>
+{% endfor %}
+<button type="button">
+  <a href='{{url_for('Add',category_id = category_id, user_id= user_id )}}'>ADD A NEW GAME</a>
+</button>
+<button type="button">
+  <a href='{{url_for('showLogin', )}}'>Log in with google</a>
+</button>
+
+</div>
+</body>
+</html>

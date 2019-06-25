@@ -1,0 +1,159 @@
+body {
+margin : 0;
+}
+
+h1,
+h2,
+p,
+a,
+input,
+textarea,
+button {
+font-family: 'M PLUS Rounded 1c', sans-serif ;
+color: #303030;
+}
+
+h1 {
+font-size: 30px;
+}
+
+h2 {
+font-size: 25px;
+}
+
+p {
+font-size: 20px;
+}
+
+a {
+color: black;
+text-decoration: none;
+font-size: 100px;
+
+}
+
+a:hover {
+color: red;
+opacity: 0.5;
+}
+
+nav {
+height: 10vh;
+background: #ff4500;
+}
+
+button {
+    margin-right: 3rem;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background: #ffd700;
+    font-size: 20px;
+}
+
+button > a:hover {
+ color: black;
+ opacity: 1;
+ }
+
+button:hover {
+    background: #fffacd;
+}
+
+.login-button {
+    float: right;
+}
+
+.nav-grid-container {
+display: grid;
+grid-template-columns : auto auto;
+}
+
+.nav-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.login > h1 {
+text-align: center;
+}
+
+.login > #signinButton {
+text-align: center;
+}
+
+#result {
+font-size: 20px;
+font-family: 'M PLUS Rounded 1c', sans-serif ;
+}
+
+/* recipe page */
+.recipe-detail-page {
+padding: 1rem 1rem;
+}
+
+/* category page */
+.category-page {
+padding: 1rem 1rem;
+}
+
+.add-button {
+width: 150px;
+}
+
+/* new recipe page */
+
+.new-recipe-name {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 10px 5px;
+}
+
+.new-recipe-description {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 10px 5px;
+}
+
+
+/* recipe edit page */
+.edit-recipe-page {
+padding: 1rem 1rem;
+}
+
+.edit-recipe-name {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 10px 5px;
+}
+
+.edit-recipe-description {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 10px 5px;
+}
+
+/* recipe delete page */
+.delete-recipe-page {
+padding: 1rem 1rem;
+}

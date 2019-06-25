@@ -1,0 +1,12 @@
+<html>
+    <link rel="stylesheet" href="/static/15.css">
+<body>
+<h2>{{item.name}}</h2>
+<div>
+    <p>{{item.description}}</p>
+    <button type="button"> <a href='{{url_for('edit',category_id = item.id, game_id = item.id )}}'>Edit</a></button>
+    <button type="button"> <a href='{{url_for('delete',category_id = item.id, game_id = item.id )}}'>Delete</a></button>
+
+</div>
+</body>
+</html>
